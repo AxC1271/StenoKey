@@ -1,6 +1,7 @@
 # Steno-Key
 
 ## 📖 Introduction
+Welcome to the Steno-Key project! This is a custom project that I've wanted to make for a while because I've always been fascinated by stenography keyboards and the high WPMs that people can achieve with it.
 
 ## 🛠️ Design Approach
 

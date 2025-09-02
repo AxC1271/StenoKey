@@ -1,14 +1,9 @@
 # Steno-Key
 
 ## 📖 Introduction
-Welcome to the Steno-Key project! This is a custom project that I've wanted to make for a while because I've always been fascinated by stenography keyboards and the high WPMs that people can achieve with it.
+Welcome to the Steno-Key project! This is a custom project that I've wanted to make for a while because I've always been fascinated by stenography keyboards and the high WPMs that people can achieve with it. This README serves as an introduction to stenography keyboards, the design process with making one from scratch, and eventually a demonstration of the keyboard working.
 
 ## 🛠️ Design Approach
-
-### ⚡ Power Regulator Circuit
-
-### 🔲 STM32F103C8T6 MCU
-
 
 ## 🧩 PCB Layout
 

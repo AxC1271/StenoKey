@@ -13,6 +13,9 @@ We will use the STM32F103 chip as the main microcontroller that handles the inpu
 </p>
 
 ### Microcontroller Peripherals
+<p align="center">
+    <img width="800px" src="./Images/MCUPeripherals.png" />
+</p>
 
 ### Key Switches
 

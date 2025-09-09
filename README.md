@@ -5,6 +5,8 @@ Welcome to the Steno-Key project! This is a custom project that I've wanted to m
 
 ## 🛠️ Design Approach
 
+We will use the STM32F103 chip as the main microcontroller that handles the inputs from the Cherry switches, and we will write some firmware to handle those key inputs. More specifically, we will use the `QMK` library since they already have a built-in stenography library.
+
 ## 🧩 PCB Layout
 
 ## 🖼️ 3D View

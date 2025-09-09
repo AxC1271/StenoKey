@@ -12,12 +12,25 @@ We will use the STM32F103 chip as the main microcontroller that handles the inpu
     <img width="800px" src="./Images/AMS1117RegulatorCircuit.png" />
 </p>
 
+The STM32F103 chip requires an input of 3.3V. Since the USB-C port supplies a direct 5V, we need to step it down using a linear dropout regulator. Based
+on the datasheet for the AMS1117 chip, we are using `22uF` capacitors to stabilize the input and output voltages for use. There's an LED at the output just
+to visually verify that we indeed do have 3.3V running in the board.
+
 ### Microcontroller Peripherals
 <p align="center">
-    <img width="800px" src="./Images/MCUPeripherals.png" />
+    <img width="800px" src="./Images/MCUSchematic.png" />
 </p>
 
+The STM32103 chip requires a bunch of bypass capacitors, on top of a larger bulk capacitor, on its power pins to stabilize each power pin. 
+- For every VDD pin, you are required to supply a `100nF` capacitor for filtering, so in the schematic there are four `100nF` capacitors.
+- For the VDDA pin, you'll need to perform a low-pass filter using a ferrite bead. This is necessary even when inputs are purely digital.
+- The boot switch is connected to an SPDT which is allowed for debugging purposes with a linker. Another LED is added to determine which mode is active.
+- The crystal oscillator has `10pF` capacitors on both the HSE_IN and HSE_OUT pins. The gate capacitance of the oscillator is 7pF, so (7pF - 2pF) * 5 = 10pF.
+
 ### Key Switches
+<p align="center">
+    <img width="800px" src="./Images/Keyswitches.png" />
+</p>
 
 ## 🧩 PCB Layout
 

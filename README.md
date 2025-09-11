@@ -18,7 +18,7 @@ to visually verify that we indeed do have 3.3V running in the board.
 
 ### Microcontroller Peripherals
 <p align="center">
-    <img width="800px" src="./Images/MicrocontrollerPeripherals.png" />
+    <img width="800px" src="./Images/MCUPeripherals.png" />
 </p>
 
 The STM32103 chip requires a bunch of bypass capacitors, on top of a larger bulk capacitor, on its power pins to stabilize each power pin. 
